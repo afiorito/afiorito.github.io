@@ -1,0 +1,16 @@
+.HomePage {
+    height: 100px;
+    width: 400px;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -200px;
+
+    .in-progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
