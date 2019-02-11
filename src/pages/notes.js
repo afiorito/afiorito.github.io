@@ -1,11 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import NotesNav from '../components/NotesNav';
 import SEO from "../components/seo"
 
 const NotesPage = () => (
   <React.Fragment>
     <SEO title="Page two" />
+    <NotesNav />
     <h1>Notes</h1>
   </React.Fragment>
 )

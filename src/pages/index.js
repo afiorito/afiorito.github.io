@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import '../components/layout.scss';
 import './index.scss';
+import '../components/responsive.scss';
 
 const HomePage = () => (
   <main className="HomePage">

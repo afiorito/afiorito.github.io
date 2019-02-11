@@ -1,0 +1,66 @@
+@import 'variables';
+
+.NotesNav {
+    padding: $pad 2*$pad;
+    border-bottom: 1px solid $gray-highlight;
+    color: $primary-text-dark;
+    position: relative;
+
+    .nav-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand {
+        margin: 0px 48px;
+        font-size: 0.8em;
+    }
+
+    .brand-logo {
+        filter: drop-shadow(0px 1px 2px #B4B4B4);
+        position: absolute;
+        width: 40px;
+        top: 8px;
+    }
+
+    .note-search__input {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        border: 1px solid $gray-highlight;
+        border-radius: 50px;
+        width: 45%;
+        max-width: 250px;
+        padding: 0px $pad;
+    }
+
+    .note-search__icon {
+        margin: 0;
+        width: 10px;
+    }
+
+    .note-search__text-input {
+        font-size: 0.6em;
+        color: $primary-text-dark;
+        outline: none;
+        border: 0;
+        margin-left: $pad / 2;
+        width: 100%;
+    }
+
+    @media only screen and (min-width: $md) {
+        .brand {
+            font-size: 1em;
+        }
+
+        .note-search__text-input {
+            font-size: 0.8em;
+        }
+
+        .note-search__icon {
+            width: 12px;
+        }
+    }
+
+}
