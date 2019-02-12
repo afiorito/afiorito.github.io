@@ -278,6 +278,24 @@
             "semester": "FALL 2018",
             "professor": "F. Khendek",
             "type": "package"
+        },
+        {
+            "code": "COMP 472",
+            "courseTitle": "Introduction to Artificial Intelligence",
+            "id": 32,
+            "link": "https://www.dropbox.com/s/zh3dcshzqgjky9d/review_package.pdf?dl=0",
+            "semester": "FALL 2018",
+            "professor": "L. Kosseim",
+            "type": "package"
+        },
+        {
+            "code": "COMP 335",
+            "courseTitle": "Introduction to Theoretical Computer Science",
+            "id": 33,
+            "link": "https://www.dropbox.com/s/hg4jz52s66qcnxb/review_package.pdf?dl=0",
+            "semester": "FALL 2018",
+            "professor": "N. Shiri",
+            "type": "package"
         }
 
     ]
