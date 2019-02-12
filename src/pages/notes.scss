@@ -1,0 +1,8 @@
+@import '../styles/variables';
+
+.documents__main {
+    padding: $pad * 4 $pad * 2;
+    .documents__header {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,30 @@
+$sm: 30em;
+$md: 48em;
+$lg: 64em;
+$pad: 10px;
+
+// COLORS
+$gray-highlight: #eeeeee;
+$primary-text-dark: #1B2733;
+
+// FONTS
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/CircularStd-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/CircularStd-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/CircularStd-Bold.woff') format('woff');
+}

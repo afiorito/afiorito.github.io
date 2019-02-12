@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
-import '../components/layout.scss';
+import '../styles/layout.scss';
 import './index.scss';
-import '../components/responsive.scss';
+import '../styles/responsive.scss';
 
 const HomePage = () => (
   <main className="HomePage">
