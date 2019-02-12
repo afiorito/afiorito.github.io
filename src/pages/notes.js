@@ -5,8 +5,9 @@ import Document from '../components/Document'
 import NotesNav from '../components/NotesNav'
 import SEO from "../components/seo"
 
-import '../styles/responsive.scss';
-import './notes.scss';
+import '../styles/layout.scss'
+import '../styles/responsive.scss'
+import './notes.scss'
 
 class NotesPage extends Component {
 
