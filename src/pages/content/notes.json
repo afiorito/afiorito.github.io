@@ -1,0 +1,284 @@
+{
+    "notes": [
+        {
+            "code": "ELEC 273",
+            "courseTitle": "Basic Circuit Analysis",
+            "id": 1,
+            "link": "https://www.dropbox.com/s/ufjin2fxihlj528/course_notes.pdf?dl=0",
+            "semester": "FALL 2015",
+            "professor": "R. Raut",
+            "type": "note"
+        },
+        {
+            "code": "COEN 212",
+            "courseTitle": "Digital Systems Design I",
+            "id": 2,
+            "link": "https://www.dropbox.com/s/90r0yzplcp2jq6n/course_notes.pdf?dl=0",
+            "semester": "FALL 2015",
+            "professor": "A. Al-Khalili",
+            "type": "note"
+        },
+        {
+            "code": "COEN 243",
+            "courseTitle": "Programming Methodology I",
+            "id": 3,
+            "link": "https://www.dropbox.com/s/u0bf4ciwc18j6iu/course_notes.pdf?dl=0",
+            "semester": "FALL 2015",
+            "professor": "D. Davis",
+            "type": "note"
+        },
+        {
+            "code": "ENGR 201",
+            "courseTitle": "Professional Practice and Responsibility",
+            "id": 4,
+            "link": "https://www.dropbox.com/s/hvvzdgqvhn9ni38/review_package.pdf?dl=0",
+            "semester": "FALL 2015",
+            "professor": "R. Alaurent",
+            "type": "package"
+        },
+        {
+            "code": "ENGR 213",
+            "courseTitle": "Differential Equations",
+            "id": 5,
+            "link": "https://www.dropbox.com/s/ur4o0274fj61ag5/course_notes.pdf?dl=0",
+            "semester": "FALL 2015",
+            "professor": "C. Alecsandru",
+            "type": "package"
+        },
+        {
+            "code": "COEN 231",
+            "courseTitle": "Discrete Mathematics",
+            "id": 6,
+            "link": "https://www.dropbox.com/s/csezkn7pqw90c3v/course_notes.pdf?dl=0",
+            "semester": "WINTER 2016",
+            "professor": "M. Beldjehem",
+            "type": "note"
+        },
+        {
+            "code": "ELEC 242",
+            "courseTitle": "Continuous-Time Signals and Systems",
+            "id": 7,
+            "link": "https://www.dropbox.com/s/f24tnjqhfxbrxo8/course_notes.pdf?dl=0",
+            "semester": "WINTER 2016",
+            "professor": "Y. Shayan",
+            "type": "note"
+        },
+        {
+            "code": "ELEC 311",
+            "courseTitle": "Electronics I",
+            "id": 8,
+            "link": "https://www.dropbox.com/s/tk7wj5i66q6pnug/course_notes.pdf?dl=0",
+            "semester": "WINTER 2016",
+            "professor": "M. Z. Kabir",
+            "type": "note"
+        },
+        {
+            "code": "COEN 352",
+            "courseTitle": "Data Structures and Algorithms",
+            "id": 9,
+            "link": "https://www.dropbox.com/s/carn3iblc8jqm9u/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2016",
+            "professor": "M. Beldjehem",
+            "type": "note"
+        },
+        {
+            "code": "ELEC 342",
+            "courseTitle": "Discrete-Time Signals and Systems",
+            "id": 10,
+            "link": "https://www.dropbox.com/s/3evtjqkfl9dqx6p/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2016",
+            "professor": "W. Lynch",
+            "type": "note"
+        },
+        {
+            "code": "ELEC 342",
+            "courseTitle": "Discrete-Time Signals and Systems",
+            "id": 11,
+            "link": "https://www.dropbox.com/s/0kzlur3mfzbdltx/review_package.pdf?dl=0",
+            "semester": "SUMMER 2016",
+            "professor": "W. Lynch",
+            "type": "package"
+        },
+        {
+            "code": "ENCS 282",
+            "courseTitle": "Technical Writing and Communication",
+            "id": 12,
+            "link": "https://www.dropbox.com/s/8hy9p7k1qega7rb/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2016",
+            "professor": "M. Silas",
+            "type": "note"
+        },
+        {
+            "code": "ENGR 233",
+            "courseTitle": "Advanced Calculus",
+            "id": 13,
+            "link": "https://www.dropbox.com/s/nh6hme85wwbow97/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2016",
+            "professor": "V. Ramachandran",
+            "type": "note"
+        },
+        {
+            "code": "COEN 313",
+            "courseTitle": "Digital Systems Design II",
+            "id": 14,
+            "link": "https://www.dropbox.com/s/i5to4jgba3u5815/review_package.pdf?dl=0",
+            "semester": "WINTER 2017",
+            "professor": "H. Aridhi",
+            "type": "package"
+        },
+        {
+            "code": "COEN 346",
+            "courseTitle": "Operating Systems",
+            "id": 15,
+            "link": "https://www.dropbox.com/s/nnvbibsx74e7ecz/review_package.pdf?dl=0",
+            "semester": "WINTER 2017",
+            "professor": "F. Khendek",
+            "type": "package"
+        },
+        {
+            "code": "ELEC 321",
+            "courseTitle": "Introduction to Semiconductor Materials and Devices",
+            "id": 16,
+            "link": "https://www.dropbox.com/s/zy3meesao3lj3kq/course_notes.pdf?dl=0",
+            "semester": "WINTER 2017",
+            "professor": "M. Kahrizi",
+            "type": "note"
+        },
+        {
+            "code": "ELEC 321",
+            "courseTitle": "Introduction to Semiconductor Materials and Devices",
+            "id": 17,
+            "link": "https://www.dropbox.com/s/mh55lm7hp7absni/review_package.pdf?dl=0",
+            "semester": "WINTER 2017",
+            "professor": "M. Kahrizi",
+            "type": "package"
+        },
+        {
+            "code": "COEN 290",
+            "courseTitle": "Team Design Project",
+            "id": 18,
+            "link": "https://www.dropbox.com/s/qoexcg0rkxwy7qz/review_package.pdf?dl=0",
+            "semester": "WINTER 2017",
+            "professor": "K. Khorasani",
+            "type": "package"
+        },
+        {
+            "code": "ECON 201",
+            "courseTitle": "Introduction to Microeconomics",
+            "id": 19,
+            "link": "https://www.dropbox.com/s/dyjreo577cuujub/review_package.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "I. Irvine",
+            "type": "package"
+        },
+        {
+            "code": "ENGR 301",
+            "courseTitle": "Engineering Management Principles and Economics",
+            "id": 20,
+            "link": "https://www.dropbox.com/s/kk8rken44249tkq/review_package.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "F. Tardy",
+            "type": "package"
+        },
+        {
+            "code": "ENGR 391",
+            "courseTitle": "Numerical Methods",
+            "id": 21,
+            "link": "https://www.dropbox.com/s/qkqyzrpm6vb7kpl/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "C. El Ayoubi",
+            "type": "note"
+        },
+        {
+            "code": "ENGR 391",
+            "courseTitle": "Numerical Methods",
+            "id": 22,
+            "link": "https://www.dropbox.com/s/o79cjywyeac02aa/review_package.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "C. El Ayoubi",
+            "type": "package"
+        },
+        {
+            "code": "ENGR 392",
+            "courseTitle": "Impact of Technology on Society",
+            "id": 23,
+            "link": "https://www.dropbox.com/s/sf76uohn2oo6825/course_notes.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "A. De Matos Alves",
+            "type": "note"
+        },
+        {
+            "code": "ENGR 392",
+            "courseTitle": "Impact of Technology on Society",
+            "id": 24,
+            "link": "https://www.dropbox.com/s/c9mlk9vl9wfh4k2/review_package.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "A. De Matos Alves",
+            "type": "package"            
+        },
+        {
+            "code": "ENGR 392",
+            "courseTitle": "Impact of Technology on Society",
+            "id": 25,
+            "link": "https://www.dropbox.com/s/8cgf7pos4yd6xlj/reading_notes.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "A. De Matos Alves",
+            "type": "package"    
+        },
+        {
+            "code": "COEN 316",
+            "courseTitle": "Computer Architecture and Design",
+            "id": 26,
+            "link": "https://www.dropbox.com/s/uexpj1xgo8bpou9/review_package.pdf?dl=0",
+            "semester": "FALL 2017",
+            "professor": "O. Ait Mohamed",
+            "type": "package"
+        },
+        {
+            "code": "COEN 317",
+            "courseTitle": "Microprocessor Systems",
+            "id": 27,
+            "link": "https://www.dropbox.com/s/2yvyu1ckr1rqqxb/review_package.pdf?dl=0",
+            "semester": "FALL 2017",
+            "professor": "A. Trabelsi",
+            "type": "package"
+        },
+        {
+            "code": "COEN 320",
+            "courseTitle": "Introduction to Real-time Systems",
+            "id": 28,
+            "link": "https://www.dropbox.com/s/9s6nj79sgb1nptd/review_package.pdf?dl=0",
+            "semester": "FALL 2017",
+            "professor": "K. Khorasani",
+            "type": "package"
+        },
+        {
+            "code": "COEN 424",
+            "courseTitle": "Programming on the Cloud",
+            "id": 29,
+            "link": "https://www.dropbox.com/s/xkeo1hi2emiduh1/review_package.pdf?dl=0",
+            "semester": "FALL 2017",
+            "professor": "Y. Liu",
+            "type": "package"
+        },
+        {
+            "code": "COMP 371",
+            "courseTitle": "Computer Graphics",
+            "id": 30,
+            "link": "https://www.dropbox.com/s/w3dyuzooxzmvwwl/review_package.pdf?dl=0",
+            "semester": "SUMMER 2017",
+            "professor": "C. Poullis",
+            "type": "package"
+        },
+        {
+            "code": "COEN 445",
+            "courseTitle": "Communication Networks and Protocols",
+            "id": 31,
+            "link": "https://www.dropbox.com/s/yvmfhhjy9t3qyat/review_package.pdf?dl=0",
+            "semester": "FALL 2018",
+            "professor": "F. Khendek",
+            "type": "package"
+        }
+
+    ]
+}

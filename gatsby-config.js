@@ -27,6 +27,13 @@ module.exports = {
         icon: `src/images/electriapp-logo.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/content`
+      }
+    },
     'gatsby-plugin-offline',
     `gatsby-plugin-sass`
   ],

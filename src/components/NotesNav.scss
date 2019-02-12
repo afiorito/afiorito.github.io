@@ -18,7 +18,7 @@
     }
 
     .brand-logo {
-        filter: drop-shadow(0px 1px 2px #B4B4B4);
+        filter: drop-shadow(0px 1px 2px $shadow-color);
         position: absolute;
         width: 40px;
         top: 8px;
@@ -42,12 +42,12 @@
 
     .note-search__text-input {
         font-size: 1em;
-        color: $primary-text-dark;
+        color: $primary-text-gray;
         outline: none;
         border: 0;
         margin-left: 4px;
         width: 100%;
-        padding: 4px;
+        padding: 2px;
     }
 
     @media only screen and (min-width: $md) {
