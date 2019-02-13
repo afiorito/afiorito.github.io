@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { graphql } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Document from '../components/Document'
 import NotesNav from '../components/NotesNav'
@@ -23,7 +24,7 @@ class NotesPage extends Component {
     const query = this.state.query.toLowerCase();
     return this.props.data.contentJson.notes
       .filter(n => query === '' || n.code.toLowerCase().includes(query) || n.courseTitle.toLowerCase().includes(query))
-      .map(n => <a key={n.id} href={n.link} target="_blank" rel="noopener noreferrer"><Document note={n} /></a>)
+      .map(n => <OutboundLink key={n.id} href={n.link} target="_blank" rel="noopener noreferrer"><Document note={n} /></OutboundLink>)
   }
 
   updateQuery = (e) => {
