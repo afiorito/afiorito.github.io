@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Document from '../components/Document'
@@ -45,6 +45,12 @@ class NotesPage extends Component {
             {this.renderDocuments()}
           </section>
         </main>
+        <footer className="notes__footer">
+          <div className="container">
+            <p>Found an issue? Report it <Link to="/contact" state={{ referred: true }}>here</Link></p>
+            <p>© Anthony {new Date().getFullYear()}</p>
+          </div>
+        </footer>
       </React.Fragment>
     );
   }

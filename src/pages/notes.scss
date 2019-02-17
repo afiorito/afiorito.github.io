@@ -17,4 +17,22 @@
         color: inherit;
         text-decoration: none;
     }
+
+}
+
+.notes__footer {
+    border-top: 1px solid $gray-highlight;
+    background-color: $gray-highlight * 1.1;
+    padding: $pad;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+        text-align: center;
+        color: $primary-text-gray;
+    }
 }

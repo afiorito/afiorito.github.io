@@ -17,7 +17,7 @@ class ContactPage extends Component {
 
     this.state = {
       isLoading: false,
-      success: false,
+      success: null,
       form: {
         name: '',
         email: '',
