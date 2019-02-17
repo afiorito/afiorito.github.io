@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
-.HomePage {
+.Event {
     height: 100px;
     width: 400px;
 
@@ -9,10 +9,12 @@
     top: 50%;
     margin-top: -50px;
     margin-left: -200px;
+    padding: 2 * $pad;
 
-    .in-progress {
+    .event-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 }

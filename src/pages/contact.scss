@@ -1,0 +1,74 @@
+@import '../styles/variables';
+
+.ContactPage {
+
+    .contact-card {
+        box-shadow: 0px 0px 2px 0px $shadow-color;
+        margin: $pad * 4 $pad * 2.5;
+        padding: $pad * 2 $pad * 4;
+        position: relative;
+    }
+
+    .back__button {
+        display: flex;
+        padding: $pad;
+        background-color: white;
+        box-shadow: 0px 0px 2px 0px $shadow-color;
+        border: 1px solid $gray-highlight;
+        position: absolute;
+        left: -2 * $pad;
+        border-radius: 50%;
+        top: $pad * 2;
+        outline: none;
+    }
+
+    .back__button img {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    h1 {
+        margin-bottom: $pad;
+    }
+
+    .contact__pg {
+        color: $primary-text-gray;
+    }
+
+    .contact__input {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .contact__label {
+        color: $primary-text-gray;
+        font-size: 0.8em;
+        padding: $pad 0px;
+    }
+
+    .contact-field {
+        padding: $pad / 2 $pad;
+        margin-bottom: $pad;
+        border: 1px solid $gray-highlight;
+        font-size: 1em;
+        color: $primary-text-gray;
+        outline: none;
+        width: 100%;
+    }
+
+    .contact__buton {
+        border: 1px solid $gray-highlight;
+        background-color: $primary-blue;
+        color: white;
+        padding: $pad;
+        border-radius: 50px;
+        width: 100%;
+        outline: none;
+    }
+
+    textarea.contact-field {
+        min-height: 150px;
+    }
+}

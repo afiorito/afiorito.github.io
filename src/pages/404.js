@@ -1,12 +1,15 @@
 import React from "react"
+import { Link } from 'gatsby'
 
 import SEO from "../components/seo"
+import Event from '../components/Event'
 
 const NotFoundPage = () => (
     <React.Fragment>
-      <SEO title="404: Not found" />
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <SEO title="404 – Page Not Found" />
+      <Event title="Page Not Found">
+        <p>Looks like you ended up at a dead-end. Go back to the <Link to="/">main page</Link></p>
+      </Event>
     </React.Fragment>
 )
 

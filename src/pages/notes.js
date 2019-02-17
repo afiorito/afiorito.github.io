@@ -34,7 +34,10 @@ class NotesPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <SEO title="Notes" />
+        <SEO 
+          title="Anthony's Notes" 
+          keywords={[`engineering`, `school`, `notes`, ``]}
+          description="A Collection of Notes for Concordia Engineering Courses (ENGR, COEN, ELEC, COMP)" />
         <NotesNav didUpdateSearch={this.updateQuery} />
         <main className="container documents__main">
           <h4 className="documents__header">Documents</h4>
