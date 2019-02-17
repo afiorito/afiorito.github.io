@@ -48,7 +48,9 @@ class ContactPage extends Component {
   }
 
   goBack = () => {
-    window.history.back();
+    if (typeof window !== 'undefined' && window.history) {
+      window.history.back();
+    }
   }
 
   onFieldChange = (e) => {
@@ -56,7 +58,12 @@ class ContactPage extends Component {
   }
 
   render() {
-    const isReferred = window.history.state && window.history.state.referred
+    let isReferred = false;
+
+    if (typeof window !== 'undefined' && window.history) {
+      isReferred = window.history.state && window.history.state.referred
+    }
+
     return (
       <div className="container ContactPage">
         <SEO 

@@ -22,7 +22,7 @@
 
 .notes__footer {
     border-top: 1px solid $gray-highlight;
-    background-color: $gray-highlight * 1.1;
+    background-color: lighten($gray-highlight, 10%);
     padding: $pad;
     font-size: 0.8em;
     display: flex;

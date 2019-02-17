@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A place to publish cool projects and talk about technology and life.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Anthony Fiorito",
   "dependencies": {
     "gatsby": "^2.0.118",
