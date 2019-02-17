@@ -6,6 +6,15 @@
     align-items: center;
     margin-bottom: $pad * 2;
     margin-right: $pad * 2;
+    transition: transform ease 150ms;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+
+    &:hover {
+        transform: scale(1.034, 1.034);
+        transition: transform ease 175ms;
+    }
 
     .document__img {
         margin: 0;
