@@ -296,6 +296,42 @@
             "semester": "FALL 2018",
             "professor": "N. Shiri",
             "type": "package"
+        },
+        {
+            "code": "COEN 421",
+            "courseTitle": "Embedded Systems Design",
+            "id": 34,
+            "link": "https://www.dropbox.com/s/wa8hfguqftlwe0a/review_package.pdf?dl=0",
+            "semester": "Winter 2019",
+            "professor": "A. Trabelsi",
+            "type": "package"
+        },
+        {
+            "code": "ELEC 353",
+            "courseTitle": "Basic Electromagnetics and Transmission Line Theory",
+            "id": 35,
+            "link": "https://www.dropbox.com/s/gic8o7ycft5c4it/review_package.pdf?dl=0",
+            "semester": "Winter 2019",
+            "professor": "C. Trueman",
+            "type": "package"
+        },
+        {
+            "code": "ELEC 372",
+            "courseTitle": "Fundamentals of Control Systems",
+            "id": 36,
+            "link": "https://www.dropbox.com/s/u3s01qw0q700y4m/review_package.pdf?dl=0",
+            "semester": "Winter 2019",
+            "professor": "R. Selmic",
+            "type": "package"
+        }, 
+        {
+            "code": "ELEC 372",
+            "courseTitle": "Fundamentals of Control Systems",
+            "id": 37,
+            "link": "https://www.dropbox.com/s/w3e65hdd1avjd61/lecture_notes.pdf?dl=0",
+            "semester": "Winter 2019",
+            "professor": "R. Selmic",
+            "type": "note"
         }
 
     ]
