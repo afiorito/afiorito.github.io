@@ -99,6 +99,10 @@ const DocumentDetail = ({ data }) => {
                 <p>{note.semester}</p>
               </div>
               <div className="note-detail-item__div">
+                <h3>Credits</h3>
+                <p>{note.credits.toFixed(2)}</p>
+              </div>
+              <div className="note-detail-item__div">
                 <h3>Class Average</h3>
                 <p>{note.classAvg.toFixed(2)}</p>
               </div>
@@ -107,16 +111,12 @@ const DocumentDetail = ({ data }) => {
                 <p>{note.classSize}</p>
               </div>
               <div className="note-detail-item__div">
-                <h3>Credits</h3>
-                <p>{note.credits.toFixed(2)}</p>
+                <h3>Distribution</h3>
+                <p>{distributionToLetters(note.distribution)}</p>
               </div>
               <div className="note-detail-item__div">
                 <h3>File Download</h3>
                 <OutboundLink href={note.link}>{generateNoteFilename(note.link)}</OutboundLink>
-              </div>
-              <div className="note-detail-item__div">
-                <h3>Distribution</h3>
-                <p>{distributionToLetters(note.distribution)}</p>
               </div>
             </div>
           </div>
