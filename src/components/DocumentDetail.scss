@@ -1,0 +1,103 @@
+@import '../styles/variables';
+
+.DocumentDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $pad * 4 $pad * 2;
+
+    .document__img {
+        box-shadow: 0px 1px 4px 0px $shadow-color;
+        width: 30%;
+    }
+
+    .detail-body__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-content__div {
+        width: 100%;
+    }
+
+    .detail-head__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .detail-title__div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            margin-bottom: $pad / 2;
+        }
+
+        p {
+            color: $primary-text-gray;
+            font-size: 1.3em;
+        }
+    }
+
+    .note-detail__div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: $pad * 4;
+    }
+
+    .note-detail-item__div {
+        padding: $pad;
+        h3 {
+            margin-bottom: $pad;
+        }
+
+        p {
+            color: $primary-text-gray;
+            font-size: 1.1em;
+        }
+    }
+
+    @media only screen and (min-width: $md) {
+    
+        .document__img {
+            width: 20%;
+        }
+
+        .detail-body__div {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .detail-content__div {
+            margin-left: $pad * 4;
+        }
+
+        .detail-head__div {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+
+        .note-detail__div {
+            justify-content: flex-start;
+        }
+
+        .detail-title__div {
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .note-detail-item__div {
+            padding: 0;
+            margin-right: $pad * 5;
+        }
+    
+    }
+}

@@ -1,0 +1,18 @@
+@import '../styles/variables';
+
+.notes__footer {
+    border-top: 1px solid $gray-highlight;
+    background-color: lighten($gray-highlight, 10%);
+    padding: $pad;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+        text-align: center;
+        color: $primary-text-gray;
+    }
+}

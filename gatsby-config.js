@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Anthony Fiorito`,
+    title: `Anthony's Personal Website`,
     description: `A place to publish cool projects and talk about technology and life.`,
     author: `@ovoant`,
   },
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/content`
-      }
+        path: `${__dirname}/src/pages/content`,
+      },
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-sass`,
@@ -40,8 +40,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         respectDNT: true,
-        trackingId: "UA-134438502-1",
+        trackingId: 'UA-134438502-1',
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
-}
+};

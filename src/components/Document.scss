@@ -25,18 +25,23 @@
 
     .document-code__div {
         margin-top: $pad;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .document-prof__div, .document-sem__div {
-        font-size: 0.6em;
-        margin-top: -8px;
+        font-size: 0.7em;
+        margin-top: -$pad * 0.75;
         font-weight: 400;
         color: $primary-text-gray;
-    }  
+    }
 
     .document-sem__div {
-        margin-top: -10px;
+        font-style: italic;
+        color: lighten($primary-text-gray, 15%);
+    }
+
+    .document-sem__div {
+        margin-top: -$pad;
     }
 
     @media only screen and (min-width: $md) {
@@ -47,12 +52,12 @@
         }
     
         .document-code__div {
-            font-size: 1em;
+            font-size: 1.1em;
         }
     
         .document-prof__div, .document-sem__div {
-            font-size: 0.8em;
-            margin-top: -4px;
+            font-size: 0.9em;
+            margin-top: -$pad / 2;
             font-weight: 400;
             color: $primary-text-gray
         }
