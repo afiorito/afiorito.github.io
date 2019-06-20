@@ -5,7 +5,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: $pad * 2;
-    margin-right: $pad * 2;
+    margin-right: $pad;
+    margin-left: $pad;
     transition: transform ease 150ms;
     backface-visibility: hidden;
     -webkit-font-smoothing: antialiased;
@@ -29,19 +30,17 @@
     }
 
     .document-prof__div, .document-sem__div {
-        font-size: 0.7em;
-        margin-top: -$pad * 0.75;
+        font-size: 0.8em;
+        margin-top: -$pad / 2;
         font-weight: 400;
         color: $primary-text-gray;
     }
 
     .document-sem__div {
+        // margin-top: $pad;
+        font-size: 0.8em;
         font-style: italic;
         color: lighten($primary-text-gray, 15%);
-    }
-
-    .document-sem__div {
-        margin-top: -$pad;
     }
 
     @media only screen and (min-width: $md) {
