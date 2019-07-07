@@ -1,0 +1,48 @@
+@import '../styles/variables';
+
+.HomePage {
+    .header__section {
+        background-image: url('../images/background.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid $gray-highlight;
+    }
+
+    .name__h {
+        color: $primary-text-dark;
+        margin-bottom: 2px;
+    }
+
+    p.tag__p {
+        color: $primary-text-gray;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .profile__img {
+        border-radius: 50%;
+        width: 30%;
+        max-width: 220px;
+        min-width: 150px;
+        margin-bottom: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.05), 0 15px 10px rgba(0,0,0,.15);
+    }
+
+    .external__div img {
+        width: 25px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .backToNotes__img {
+        width: 30px;
+        height: 30px;
+    }
+}

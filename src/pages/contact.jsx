@@ -99,7 +99,7 @@ class ContactPage extends Component {
             <h1>Get In Touch</h1>
             <p className="contact__pg">
               Hey! Something wrong with the website? Missing/Broken notes? Just want to get in
-              touch? Leave a message here, I'll try to get back to you as soon as possible.
+              touch? Leave a message here, I&#39;ll try to get back to you as soon as possible.
             </p>
             <form className="contact__input" onSubmit={this.handleSubmit}>
               <label className="contact__label">Name</label>
