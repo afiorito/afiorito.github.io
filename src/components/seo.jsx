@@ -4,73 +4,84 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, keywords, title }) {
-    return (
-        <StaticQuery
-            query={detailsQuery}
-            render={data => {
-                const metaDescription = description || data.site.siteMetadata.description;
-                return (
-                    <Helmet
-                        htmlAttributes={{ lang }}
-                        title={title}
-                        meta={[
-                            {
-                                name: `description`,
-                                content: metaDescription,
-                            },
-                            {
-                                property: `og:title`,
-                                content: title,
-                            },
-                            {
-                                property: `og:description`,
-                                content: metaDescription,
-                            },
-                            {
-                                property: `og:type`,
-                                content: `website`,
-                            },
-                        ]
-                            .concat(
-                                keywords.length > 0
-                                    ? {
-                                          name: `keywords`,
-                                          content: keywords.join(`, `),
-                                      }
-                                    : [],
-                            )
-                            .concat(meta)}
-                    />
-                );
-            }}
-        />
-    );
+  return (
+    <StaticQuery
+      query={detailsQuery}
+      render={data => {
+        const metaDescription = description || data.site.siteMetadata.description;
+        return (
+          <Helmet
+            htmlAttributes={{ lang }}
+            title={title}
+            meta={[
+              {
+                name: `description`,
+                content: metaDescription,
+              },
+              {
+                property: `og:title`,
+                content: title,
+              },
+              {
+                property: `og:description`,
+                content: metaDescription,
+              },
+              {
+                property: `og:type`,
+                content: `website`,
+              },
+              {
+                property: `og:image`,
+                content: `https://afiorito.github.io${data.file.childImageSharp.fixed.src}`,
+              },
+            ]
+              .concat(
+                keywords.length > 0
+                  ? {
+                      name: `keywords`,
+                      content: keywords.join(`, `),
+                    }
+                  : [],
+              )
+              .concat(meta)}
+          />
+        );
+      }}
+    />
+  );
 }
 
 SEO.defaultProps = {
-    lang: `en`,
-    meta: [],
-    keywords: [],
+  lang: `en`,
+  meta: [],
+  keywords: [],
 };
 
 SEO.propTypes = {
-    description: PropTypes.string,
-    lang: PropTypes.string,
-    meta: PropTypes.array,
-    keywords: PropTypes.arrayOf(PropTypes.string),
-    title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  lang: PropTypes.string,
+  meta: PropTypes.array,
+  keywords: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string.isRequired,
 };
 
 export default SEO;
 
 const detailsQuery = graphql`
-    query DefaultSEOQuery {
-        site {
-            siteMetadata {
-                title
-                description
-                author
-            }
-        }
+  query DefaultSEOQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+      }
     }
+    file(relativePath: { eq: "profile.jpg" }) {
+      childImageSharp {
+        fixed {
+          src
+        }
+      }
+    }
+  }
 `;
