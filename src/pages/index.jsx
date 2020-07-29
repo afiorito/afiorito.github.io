@@ -35,11 +35,11 @@ const HomePage = () => (
           <img src={instagram} />
         </OutboundLink>
       </div>
-      <div className="nightlight">
+      {/* <div className="nightlight">
         <OutboundLink href="https://nightlight.electriapp.com">
           Check Out My App Nightlight
         </OutboundLink>
-      </div>
+      </div> */}
       <p className="links">
         <Link to="/contact" state={{ referred: true }}>
           Contact
