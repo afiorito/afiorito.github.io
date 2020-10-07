@@ -63,8 +63,8 @@ class NotesPage extends Component {
 
 NotesPage.propTypes = {
   data: PropTypes.shape({
-    contentJson: PropTypes.shape({
-      notes: PropTypes.object,
+    allNotesJson: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.object),
     }),
   }).isRequired,
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from './seo';
 import { graphql } from 'gatsby';
+import { BarChart, Bar, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 import NotesNav from '../components/NotesNav';
 import NotesFooter from '../components/NotesFooter';
 import PropTypes from 'prop-types';
@@ -11,65 +12,36 @@ import generateNoteFilename from '../utils/generateNoteFilename';
 
 import './DocumentDetail.scss';
 
-const distributionToLetters = distribution => {
-  return distribution
-    .map((num, i) => {
-      let string = `${num} `;
-      switch (i) {
-        case 0:
-          string += 'A+';
-          break;
-        case 1:
-          string += 'A';
-          break;
-        case 2:
-          string += 'A-';
-          break;
-        case 3:
-          string += 'B+';
-          break;
-        case 4:
-          string += 'B';
-          break;
-        case 5:
-          string += 'B-';
-          break;
-        case 6:
-          string += 'C+';
-          break;
-        case 7:
-          string += 'C';
-          break;
-        case 8:
-          string += 'C-';
-          break;
-        case 9:
-          string += 'D+';
-          break;
-        case 10:
-          string += 'D';
-          break;
-        case 11:
-          string += 'D-';
-          break;
-        case 12:
-          string += 'F';
-          break;
-        case 13:
-          string += 'FNS';
-          break;
-        default:
-          return undefined;
-      }
-      return string;
-    })
-    .filter(val => val !== undefined)
-    .join(', ');
+const formatDistribution = distribution => {
+  const letters = [
+    'A+',
+    'A',
+    'A-',
+    'B+',
+    'B',
+    'B-',
+    'C+',
+    'C',
+    'C-',
+    'D+',
+    'D',
+    'D-',
+    'F',
+    'FNS',
+    'R',
+    'NR',
+  ];
+  return distribution.map((num, i) => ({
+    letter: letters[i],
+    count: num,
+  }));
 };
 
 const DocumentDetail = ({ data }) => {
   const note = data.notesJson;
   const imgSrc = note.type === 'note' ? noteImage : packageImage;
+
+  console.log('Distribution', note.distribution);
 
   return (
     <React.Fragment>
@@ -111,12 +83,24 @@ const DocumentDetail = ({ data }) => {
                 <p>{note.classSize}</p>
               </div>
               <div className="note-detail-item__div">
-                <h3>Distribution</h3>
-                <p>{distributionToLetters(note.distribution)}</p>
-              </div>
-              <div className="note-detail-item__div">
                 <h3>File Download</h3>
                 <OutboundLink href={note.link}>{generateNoteFilename(note.link)}</OutboundLink>
+              </div>
+              <div className="note-detail-item__div--full">
+                <h3>Distribution</h3>
+                <ResponsiveContainer height={300} width="100%">
+                  <BarChart
+                    margin={{ left: -32, bottom: 16 }}
+                    barCategoryGap="10%"
+                    data={formatDistribution(note.distribution)}
+                  >
+                    <CartesianGrid vertical={false} strokeDasharray="3 3" />
+                    <XAxis dataKey="letter" />
+                    <YAxis />
+                    <Tooltip />
+                    <Bar isAnimationActive={false} dataKey="count" fill="#8b9dc3"></Bar>
+                  </BarChart>
+                </ResponsiveContainer>
               </div>
             </div>
           </div>
