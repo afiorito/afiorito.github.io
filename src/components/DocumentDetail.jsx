@@ -1,7 +1,16 @@
 import React from 'react';
 import SEO from './seo';
 import { graphql } from 'gatsby';
-import { BarChart, Bar, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  ResponsiveContainer,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ReferenceLine,
+} from 'recharts';
 import NotesNav from '../components/NotesNav';
 import NotesFooter from '../components/NotesFooter';
 import PropTypes from 'prop-types';
@@ -40,8 +49,6 @@ const formatDistribution = distribution => {
 const DocumentDetail = ({ data }) => {
   const note = data.notesJson;
   const imgSrc = note.type === 'note' ? noteImage : packageImage;
-
-  console.log('Distribution', note.distribution);
 
   return (
     <React.Fragment>
@@ -99,6 +106,18 @@ const DocumentDetail = ({ data }) => {
                     <YAxis />
                     <Tooltip />
                     <Bar isAnimationActive={false} dataKey="count" fill="#8b9dc3"></Bar>
+                    <ReferenceLine
+                      isFront
+                      strokeWidth={1}
+                      stroke="#abb7d3"
+                      x={note.grade}
+                      label={{
+                        position: 'insideTopLeft',
+                        value: 'my grade',
+                        fontSize: '13px',
+                        fill: '#626262',
+                      }}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -131,6 +150,7 @@ export const query = graphql`
       classSize
       credits
       distribution
+      grade
     }
   }
 `;
