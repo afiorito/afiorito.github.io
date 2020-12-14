@@ -47,16 +47,28 @@
     height: 30px;
   }
 
-  .nightlight {
-    background-color: rgb(121, 182, 242);
+  .app-link {
+    display: flex;
+    justify-content: center;
+    background-color: $picks;
     padding: 12px 16px;
     border-radius: 6px;
   }
 
-  .nightlight a {
+  .app-link a {
     color: white;
     font-weight: 700;
     text-decoration: none;
+  }
+
+  .app-icon {
+    background: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
   }
 
   .links {

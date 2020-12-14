@@ -1,18 +1,47 @@
 @import '../styles/variables';
 
 .notes__footer {
-    border-top: 1px solid $gray-highlight;
-    background-color: lighten($gray-highlight, 10%);
-    padding: $pad;
-    font-size: 0.8em;
+  border-top: 1px solid $gray-highlight;
+  background-color: lighten($gray-highlight, 10%);
+  padding: $pad;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0;
+    text-align: center;
+    color: $primary-text-gray;
+  }
+}
+
+.promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $picks;
+
+  .app-icon {
+    background: white;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 0;
+    height: 16px;
+    width: 16px;
+  }
+
+  span {
+    padding: 0px 8px;
+  }
+
+  a {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    p {
-        margin: 0;
-        text-align: center;
-        color: $primary-text-gray;
-    }
+    color: white;
+    font-size: 0.75em;
+    text-decoration: none;
+  }
 }

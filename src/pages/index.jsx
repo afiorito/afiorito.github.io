@@ -10,6 +10,7 @@ import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
 import twitter from '../images/twitter.svg';
 import instagram from '../images/instagram.svg';
+import picksLogo from '../images/picks-logo.svg';
 
 import '../styles/layout.scss';
 import '../styles/responsive.scss';
@@ -35,11 +36,12 @@ const HomePage = () => (
           <img src={instagram} />
         </OutboundLink>
       </div>
-      {/* <div className="nightlight">
-        <OutboundLink href="https://nightlight.electriapp.com">
-          Check Out My App Nightlight
+      <div className="app-link">
+        <img className="app-icon" src={picksLogo} alt="Picks Logo" />
+        <OutboundLink href="https://apps.apple.com/us/app/picks-random-generator/id1536305926">
+          Check Out My App – Picks
         </OutboundLink>
-      </div> */}
+      </div>
       <p className="links">
         <Link to="/contact" state={{ referred: true }}>
           Contact
