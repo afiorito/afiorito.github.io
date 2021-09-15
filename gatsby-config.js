@@ -13,5 +13,17 @@ module.exports = {
         components: path.join(__dirname, 'src', 'components'),
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Anthony's Website`,
+        short_name: `Anthony's Site`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#667EFF`,
+        display: `minimal-ui`,
+        icon: `src/assets/logo.svg`,
+      },
+    },
   ],
 };

@@ -18,6 +18,8 @@
   "dependencies": {
     "autoprefixer": "^10.3.4",
     "gatsby": "^3.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
+    "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
