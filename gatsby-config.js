@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
+    author: 'Anthony Fiorito',
+    description: `Personal website of Anthony Fiorito. I like making things and solving problems.`,
     title: `Anthony's Website`,
   },
   plugins: [
@@ -10,6 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-root-import`,
       options: {
+        assets: path.join(__dirname, 'src', 'assets'),
         components: path.join(__dirname, 'src', 'components'),
       },
     },
@@ -23,6 +26,15 @@ module.exports = {
         theme_color: `#667EFF`,
         display: `minimal-ui`,
         icon: `src/assets/logo.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [`UA-134438502-1`, `G-SXKDBWT5VM`],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],

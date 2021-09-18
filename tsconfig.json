@@ -21,6 +21,7 @@
     "baseUrl": "./",
     "paths": {
       "*": ["./src/*"]
-    }
+    },
+    "types": ["@emotion/react/types/css-prop"]
   }
 }
