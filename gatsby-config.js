@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     author: 'Anthony Fiorito',
-    description: `Personal website of Anthony Fiorito. I like making things and solving problems.`,
+    description: `Anthony Fiorito's personal website. I like making things and solving problems.`,
     title: `Anthony's Website`,
   },
   plugins: [
@@ -26,6 +26,13 @@ module.exports = {
         theme_color: `#667EFF`,
         display: `minimal-ui`,
         icon: `src/assets/logo.svg`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, 'src', 'pages', 'content'),
       },
     },
     {

@@ -1,0 +1,25 @@
+<svg width="59px" height="76px" viewBox="0 0 59 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <rect fill="#FFFFFF" x="0" y="0" width="59" height="76"></rect>
+      <rect fill="#EEEEEE" x="0" y="11" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="15" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="19" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="23" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="27" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="31" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="35" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="39" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="43" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="47" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="51" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="55" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="59" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="63" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="67" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="0" y="71" width="59" height="1"></rect>
+      <rect fill="#EEEEEE" x="6" y="0" width="1" height="76"></rect>
+      <ellipse fill="#B4B4B4" cx="3" cy="8.14285714" rx="1" ry="1"></ellipse>
+      <ellipse fill="#B4B4B4" cx="3" cy="38" rx="1" ry="1"></ellipse>
+      <ellipse fill="#B4B4B4" cx="3" cy="67.8571429" rx="1" ry="1"></ellipse>
+    </g>
+</svg>

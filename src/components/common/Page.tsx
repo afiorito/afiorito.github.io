@@ -1,11 +1,12 @@
 import { Navbar, Seo } from 'components/common';
 import { PageProps as GatsbyPageProps } from 'gatsby';
-import { Fragment, PropsWithChildren } from 'react';
+import { Fragment, PropsWithChildren, ReactNode } from 'react';
 import tw, { GlobalStyles } from 'twin.macro';
 import { NavLink } from 'types';
 import { Global } from '@emotion/react';
 
 interface PageProps {
+  brand?: ReactNode;
   description?: string;
   links?: NavLink[];
   location: GatsbyPageProps['location'];
@@ -13,6 +14,7 @@ interface PageProps {
 }
 
 export const Page = ({
+  brand,
   children,
   links = [
     { title: 'Home', pathname: '/' },
@@ -31,7 +33,7 @@ export const Page = ({
         }}
       />
       <GlobalStyles />
-      <Navbar links={links} location={location} />
+      <Navbar brand={brand} links={links} location={location} />
       {children}
     </Fragment>
   );

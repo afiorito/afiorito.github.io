@@ -2,11 +2,12 @@ import { logo } from 'assets';
 import tw from 'twin.macro';
 import styled from '@emotion/styled';
 import { Link, PageProps } from 'gatsby';
-import { useCallback, useContext, useMemo, useState } from 'react';
+import { ReactNode, useCallback, useContext, useMemo, useState } from 'react';
 import { AppContextValue, NavLink } from 'types';
 import { CloseIcon, MenuIcon, MoonIcon, SunIcon } from 'components/common';
 import { AppContext } from 'utilities/context';
 import { Theme } from 'utilities/theme';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 const NavContainer = styled.div<{
   isOpen: boolean;
@@ -38,13 +39,14 @@ const MenuItem = styled.li<{
 ]);
 
 interface NavbarProps {
+  brand?: ReactNode;
   links: NavLink[];
   location: PageProps['location'];
 }
 
 const iconStyle = tw`fill-current text-gray-700 dark:text-gray-200`;
 
-export const Navbar = ({ links, location }: NavbarProps) => {
+export const Navbar = ({ brand, links, location }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useContext<AppContextValue>(AppContext);
 
@@ -58,7 +60,11 @@ export const Navbar = ({ links, location }: NavbarProps) => {
           isActive={link.pathname === location.pathname}
           onClick={toggleOpen}
         >
-          <Link to={link.pathname}>{link.title}</Link>
+          {link.pathname.startsWith('/') ? (
+            <Link to={link.pathname}>{link.title}</Link>
+          ) : (
+            <OutboundLink href={link.pathname}>{link.title}</OutboundLink>
+          )}
         </MenuItem>
       )),
     [links, toggleOpen],
@@ -67,8 +73,8 @@ export const Navbar = ({ links, location }: NavbarProps) => {
   return (
     <nav tw="h-16">
       <NavContainer isOpen={isOpen}>
-        <Link tw="z-50" to="/" onClick={() => setIsOpen(false)}>
-          <img tw="h-10 w-10" src={logo} />
+        <Link tw="z-50" to={brand ? location.pathname : '/'} onClick={() => setIsOpen(false)}>
+          {brand ? brand : <img tw="h-10 w-10" src={logo} />}
         </Link>
         <div tw="flex flex-row-reverse items-center md:flex-row">
           <button tw="h-10 w-10 z-50 md:hidden" onClick={toggleOpen}>

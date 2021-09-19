@@ -9,7 +9,7 @@ import {
 import { PageProps } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import tw from 'twin.macro';
-import { graphic } from 'assets';
+import { graphic, picks } from 'assets';
 
 const iconStyle = tw`fill-current text-gray-700 dark:text-gray-200`;
 
@@ -27,7 +27,15 @@ const IndexPage = (props: PageProps) => (
           </p>
         </div>
         <div tw="space-y-4">
-          <Button>Check out my work</Button>
+          <Button>
+            <OutboundLink
+              href="https://apps.apple.com/us/app/picks-random-generator/id1536305926"
+              tw="flex gap-x-1.5 items-center"
+            >
+              Download my app
+              <img tw="bg-white rounded p-0.5 w-5 h-5" src={picks} /> Picks
+            </OutboundLink>
+          </Button>
           <div tw="flex justify-center space-x-2 md:justify-start">
             <OutboundLink href="https://github.com/afiorito">
               <GithubIcon css={iconStyle} tw="h-6" />

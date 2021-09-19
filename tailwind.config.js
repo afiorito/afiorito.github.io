@@ -2,7 +2,11 @@ module.exports = {
   purge: [],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        picks: '#c6a3ff',
+      },
+    },
     container: {
       center: true,
     },
