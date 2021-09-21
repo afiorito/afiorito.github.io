@@ -24,6 +24,11 @@ export interface Note {
   type: string;
 }
 
+export interface GradeData {
+  letter: string;
+  count: number;
+}
+
 export type NodesQuery<Key extends string, Node> = {
   [key in Key]: {
     nodes: Node[];

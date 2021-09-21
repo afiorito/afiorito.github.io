@@ -2,11 +2,11 @@ import { note as noteAsset, package as packageAsset } from 'assets';
 import { Page } from 'components/common';
 import { graphql, PageProps } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
-import { ReactNode } from 'react';
+import { ReactNode, useMemo } from 'react';
 import { textLinkStyle } from 'styles';
-import { NodeQuery, Note } from 'types';
+import { GradeData, NodeQuery, Note } from 'types';
 import 'twin.macro';
-import { NotesBranding } from 'components/notes';
+import { Footer, GradeDistribution, NotesBranding } from 'components/notes';
 
 interface NotePropertyProps {
   name: string;
@@ -23,6 +23,32 @@ const NoteProperty = ({ name, value }: NotePropertyProps) => (
 const DocumentPage = ({ data, ...props }: PageProps<NodeQuery<'notesJson', Note>>) => {
   const note = data.notesJson;
 
+  const distribution = useMemo<GradeData[]>(
+    () =>
+      note.distribution.map((num, i) => ({
+        letter: [
+          'A+',
+          'A',
+          'A-',
+          'B+',
+          'B',
+          'B-',
+          'C+',
+          'C',
+          'C-',
+          'D+',
+          'D',
+          'D-',
+          'F',
+          'FNS',
+          'R',
+          'NR',
+        ][i],
+        count: num,
+      })),
+    [note],
+  );
+
   return (
     <Page
       brand={<NotesBranding />}
@@ -35,9 +61,13 @@ const DocumentPage = ({ data, ...props }: PageProps<NodeQuery<'notesJson', Note>
       title={`Anthony's ${note.code} Notes${note.type !== 'note' ? ' Package' : ''}`}
       {...props}
     >
-      <main tw="container flex flex-col items-center p-4 pt-8 gap-y-16">
+      <main tw="container flex flex-col items-center p-4 pt-8 gap-y-16 mb-16">
         <header tw="flex flex-col items-center gap-y-8">
-          <img tw="w-48 shadow" src={note.type === 'note' ? noteAsset : packageAsset} />
+          <img
+            tw="w-48 shadow"
+            src={note.type === 'note' ? noteAsset : packageAsset}
+            alt={`${note.type}`}
+          />
           <div tw="text-center">
             <h1 tw="text-3xl font-medium text-gray-800 dark:text-white">{note.courseTitle}</h1>
             <p tw="text-2xl text-gray-600 dark:text-gray-300">{note.code}</p>
@@ -63,10 +93,12 @@ const DocumentPage = ({ data, ...props }: PageProps<NodeQuery<'notesJson', Note>
             }
           ></NoteProperty>
         </section>
-        <section>
+        <section tw="h-72 w-full">
           <h2 tw="text-2xl font-medium text-gray-900 dark:text-white">Distribution</h2>
+          <GradeDistribution distribution={distribution} grade={note.grade} />
         </section>
       </main>
+      <Footer />
     </Page>
   );
 };

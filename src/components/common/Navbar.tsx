@@ -13,7 +13,7 @@ const NavContainer = styled.div<{
   isOpen: boolean;
 }>(({ isOpen }) => [
   isOpen ? tw`fixed left-0 right-0` : tw`static`,
-  tw`container flex flex-1 justify-between items-center p-4 pt-3 pt-3`,
+  tw`container flex flex-1 justify-between items-center p-4 pt-3 pt-3 z-50`,
 ]);
 
 const Menu = tw.ul`text-xl space-x-16 hidden md:flex`;
@@ -74,7 +74,7 @@ export const Navbar = ({ brand, links, location }: NavbarProps) => {
     <nav tw="h-16">
       <NavContainer isOpen={isOpen}>
         <Link tw="z-50" to={brand ? location.pathname : '/'} onClick={() => setIsOpen(false)}>
-          {brand ? brand : <img tw="h-10 w-10" src={logo} />}
+          {brand ? brand : <img tw="h-10 w-10" src={logo} alt="Anthony Fiorito Logo" />}
         </Link>
         <div tw="flex flex-row-reverse items-center md:flex-row">
           <button tw="h-10 w-10 z-50 md:hidden" onClick={toggleOpen}>

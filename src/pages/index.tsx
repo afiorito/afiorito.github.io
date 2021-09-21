@@ -16,7 +16,7 @@ const iconStyle = tw`fill-current text-gray-700 dark:text-gray-200`;
 const IndexPage = (props: PageProps) => (
   <Page title="Anthony's Website" {...props}>
     <main tw="container flex flex-col items-center p-4 md:flex-row-reverse md:justify-between md:pt-32 md:pb-32">
-      <img src={graphic} tw="max-w-sm w-full p-4 sm:max-w-md lg:p-0 lg:max-w-max" />
+      <img src={graphic} tw="max-w-sm w-full p-4 sm:max-w-md lg:p-0 lg:max-w-max" alt="Computer" />
       <div tw="flex flex-col items-center space-y-12 md:items-start">
         <div tw="text-center md:text-left">
           <h1 tw="font-bold text-4xl text-gray-800 dark:text-white sm:text-6xl md:text-4xl lg:text-7xl">
@@ -33,7 +33,7 @@ const IndexPage = (props: PageProps) => (
               tw="flex gap-x-1.5 items-center"
             >
               Download my app
-              <img tw="bg-white rounded p-0.5 w-5 h-5" src={picks} /> Picks
+              <img tw="bg-white rounded p-0.5 w-5 h-5" src={picks} alt="Picks Logo" /> Picks
             </OutboundLink>
           </Button>
           <div tw="flex justify-center space-x-2 md:justify-start">

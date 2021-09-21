@@ -1,12 +1,10 @@
 import { Input, Page, SearchIcon } from 'components/common';
 import { graphql, Link, PageProps } from 'gatsby';
-import tw from 'twin.macro';
+import 'twin.macro';
 import { NodesQuery, Note } from 'types';
-import { note as noteAsset, package as packageAsset, picks } from 'assets';
+import { note as noteAsset, package as packageAsset } from 'assets';
 import { useMemo, useState } from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
-import { textLinkStyle } from 'styles';
-import { NotesBranding } from 'components/notes';
+import { Footer, NotesBranding } from 'components/notes';
 
 interface DocumentProps {
   note: Note;
@@ -14,7 +12,11 @@ interface DocumentProps {
 
 const Document = ({ note }: DocumentProps) => (
   <div tw="flex flex-col items-center mt-8 ml-4 mr-4">
-    <img src={note.type === 'note' ? noteAsset : packageAsset} tw="shadow w-32 md:w-36" />
+    <img
+      src={note.type === 'note' ? noteAsset : packageAsset}
+      tw="shadow w-32 md:w-36"
+      alt={`${note.type}`}
+    />
     <div tw="flex flex-col items-center pt-2">
       <div tw="font-medium text-gray-800 dark:text-white md:text-xl">{note.code}</div>
       <div tw="text-sm text-gray-600 dark:text-gray-300 md:text-lg">{note.professor}</div>
@@ -22,8 +24,6 @@ const Document = ({ note }: DocumentProps) => (
     </div>
   </div>
 );
-
-const PicksImg = tw.img`bg-white rounded p-0.5 h-5 w-5`;
 
 const NotesPage = ({ data, ...props }: PageProps<NodesQuery<'allNotesJson', Note>>) => {
   const [filter, setFilter] = useState('');
@@ -76,31 +76,7 @@ const NotesPage = ({ data, ...props }: PageProps<NodesQuery<'allNotesJson', Note
           )}
         </div>
       </main>
-      <footer>
-        <section>
-          <OutboundLink href="https://apps.apple.com/us/app/picks-random-generator/id1536305926">
-            <div tw="bg-picks flex justify-center items-center gap-x-4 p-3 text-gray-100">
-              <PicksImg src={picks} alt="Picks Logo" />
-              <span>
-                Check Out My App – <span tw="font-bold">Picks</span>
-              </span>
-              <PicksImg className="app-icon" src={picks} alt="Picks Logo" />
-            </div>
-          </OutboundLink>
-        </section>
-        <section tw="flex flex-col text-sm justify-center items-center pt-4 pb-8">
-          <div tw="flex justify-center text-sm text-gray-800 dark:text-white">
-            Found an issue? Report it&nbsp;
-            <Link css={textLinkStyle} to="/contact">
-              here
-            </Link>
-            .
-          </div>
-          <div tw="text-gray-600 dark:text-gray-300 p-1">
-            © Anthony 2015-{new Date().getFullYear()}
-          </div>
-        </section>
-      </footer>
+      <Footer />
     </Page>
   );
 };

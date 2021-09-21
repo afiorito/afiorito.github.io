@@ -7,6 +7,15 @@ module.exports = {
     title: `Anthony's Website`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [`UA-134438502-1`, `G-SXKDBWT5VM`],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
@@ -33,15 +42,6 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, 'src', 'pages', 'content'),
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [`UA-134438502-1`, `G-SXKDBWT5VM`],
-        pluginConfig: {
-          head: true,
-        },
       },
     },
   ],
