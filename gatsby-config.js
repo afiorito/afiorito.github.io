@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     author: 'Anthony Fiorito',
     description: `Anthony Fiorito's personal website. I like making things and solving problems.`,
+    image: '/images/anthonyf.png',
     title: `Anthony's Website`,
     url: `https://anthonyf.io`,
     twitterUsername: '@ovoant',

@@ -6,6 +6,7 @@ export interface NavLink {
 export interface SiteMetadata {
   author: string;
   description: string;
+  image: string;
   title: string;
   twitterUsername: string;
   url: string;
