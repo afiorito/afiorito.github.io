@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-components-document-detail-jsx","path":"/notes/ENGR392/note","result":{"data":{"notesJson":{"id":"3dd5c9df-1187-5ef0-9aac-e6c3553bc004","link":"https://www.dropbox.com/s/b6qy1aa6go9snge/engr392-notes.pdf?dl=0","professor":"A. De Matos Alves","semester":"SUMMER 2017","type":"note","code":"ENGR 392","courseTitle":"Impact of Technology on Society","classAvg":3.06,"classSize":82,"credits":3,"distribution":[0,3,16,9,33,13,3,3,1,0,1,0,0,0,0,0],"grade":"A"}},"pageContext":{"code":"ENGR 392","type":"note"}},"staticQueryHashes":["1270771986"]}
+{
+    "componentChunkName": "component---src-components-pages-document-tsx",
+    "path": "/notes/ENGR392/note",
+    "result": {"data":{"notesJson":{"id":"3dd5c9df-1187-5ef0-9aac-e6c3553bc004","link":"https://www.dropbox.com/s/b6qy1aa6go9snge/engr392-notes.pdf?dl=0","professor":"A. De Matos Alves","semester":"SUMMER 2017","type":"note","code":"ENGR 392","courseTitle":"Impact of Technology on Society","classAvg":3.06,"classSize":82,"credits":3,"distribution":[0,3,16,9,33,13,3,3,1,0,1,0,0,0,0,0],"grade":"A"}},"pageContext":{"code":"ENGR 392","type":"note"}},
+    "staticQueryHashes": ["531803365"]}

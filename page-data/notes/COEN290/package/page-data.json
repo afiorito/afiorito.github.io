@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-components-document-detail-jsx","path":"/notes/COEN290/package","result":{"data":{"notesJson":{"id":"6cf1e34d-58a8-551f-a76a-746fffeb0857","link":"https://www.dropbox.com/s/h4dpex75xqvbrvd/coen290-review.pdf?dl=0","professor":"K. Khorasani","semester":"WINTER 2017","type":"package","code":"COEN 290","courseTitle":"Team Design Project","classAvg":2.99,"classSize":61,"credits":3,"distribution":[4,7,4,11,11,10,5,6,0,2,0,0,0,1,0,0],"grade":"A"}},"pageContext":{"code":"COEN 290","type":"package"}},"staticQueryHashes":["1270771986"]}
+{
+    "componentChunkName": "component---src-components-pages-document-tsx",
+    "path": "/notes/COEN290/package",
+    "result": {"data":{"notesJson":{"id":"6cf1e34d-58a8-551f-a76a-746fffeb0857","link":"https://www.dropbox.com/s/h4dpex75xqvbrvd/coen290-review.pdf?dl=0","professor":"K. Khorasani","semester":"WINTER 2017","type":"package","code":"COEN 290","courseTitle":"Team Design Project","classAvg":2.99,"classSize":61,"credits":3,"distribution":[4,7,4,11,11,10,5,6,0,2,0,0,0,1,0,0],"grade":"A"}},"pageContext":{"code":"COEN 290","type":"package"}},
+    "staticQueryHashes": ["531803365"]}

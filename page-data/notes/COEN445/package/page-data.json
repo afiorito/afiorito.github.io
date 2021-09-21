@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-components-document-detail-jsx","path":"/notes/COEN445/package","result":{"data":{"notesJson":{"id":"fd146e56-c414-510d-90a5-7ceba103c66d","link":"https://www.dropbox.com/s/d8lq7ftun74nvtr/coen445-review.pdf?dl=0","professor":"F. Khendek","semester":"FALL 2018","type":"package","code":"COEN 445","courseTitle":"Communication Networks and Protocols","classAvg":2.78,"classSize":21,"credits":3.5,"distribution":[1,2,4,2,0,3,3,3,1,0,2,0,0,0,0,0],"grade":"A"}},"pageContext":{"code":"COEN 445","type":"package"}},"staticQueryHashes":["1270771986"]}
+{
+    "componentChunkName": "component---src-components-pages-document-tsx",
+    "path": "/notes/COEN445/package",
+    "result": {"data":{"notesJson":{"id":"fd146e56-c414-510d-90a5-7ceba103c66d","link":"https://www.dropbox.com/s/d8lq7ftun74nvtr/coen445-review.pdf?dl=0","professor":"F. Khendek","semester":"FALL 2018","type":"package","code":"COEN 445","courseTitle":"Communication Networks and Protocols","classAvg":2.78,"classSize":21,"credits":3.5,"distribution":[1,2,4,2,0,3,3,3,1,0,2,0,0,0,0,0],"grade":"A"}},"pageContext":{"code":"COEN 445","type":"package"}},
+    "staticQueryHashes": ["531803365"]}

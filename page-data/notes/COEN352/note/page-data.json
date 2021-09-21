@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-components-document-detail-jsx","path":"/notes/COEN352/note","result":{"data":{"notesJson":{"id":"5743a17a-5676-5b29-bd22-0fd26925cef0","link":"https://www.dropbox.com/s/5s12chs8atkgnmx/coen352-notes.pdf?dl=0","professor":"M. Beldjehem","semester":"SUMMER 2016","type":"note","code":"COEN 352","courseTitle":"Data Structures and Algorithms","classAvg":3.42,"classSize":35,"credits":3,"distribution":[3,6,10,7,4,2,1,1,0,0,1,0,0,0,0,0],"grade":"A+"}},"pageContext":{"code":"COEN 352","type":"note"}},"staticQueryHashes":["1270771986"]}
+{
+    "componentChunkName": "component---src-components-pages-document-tsx",
+    "path": "/notes/COEN352/note",
+    "result": {"data":{"notesJson":{"id":"5743a17a-5676-5b29-bd22-0fd26925cef0","link":"https://www.dropbox.com/s/5s12chs8atkgnmx/coen352-notes.pdf?dl=0","professor":"M. Beldjehem","semester":"SUMMER 2016","type":"note","code":"COEN 352","courseTitle":"Data Structures and Algorithms","classAvg":3.42,"classSize":35,"credits":3,"distribution":[3,6,10,7,4,2,1,1,0,0,1,0,0,0,0,0],"grade":"A+"}},"pageContext":{"code":"COEN 352","type":"note"}},
+    "staticQueryHashes": ["531803365"]}
