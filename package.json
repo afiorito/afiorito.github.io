@@ -9,7 +9,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "clean": "gatsby clean",
     "check": "npm run typecheck && npm run prettier && npm run lint",
     "lint": "eslint --ext .ts,.tsx src/",

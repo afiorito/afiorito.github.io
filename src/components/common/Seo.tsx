@@ -16,12 +16,10 @@ interface SeoProps {
 export const Seo = ({ description, keywords, lang = 'en', title }: SeoProps) => {
   const { pathname } = useLocation();
   const {
-    author,
-    description: defaultDescription,
-    image,
-    twitterUsername,
-    url,
-  } = useStaticQuery<SiteMetadata>(query);
+    site: {
+      siteMetadata: { author, description: defaultDescription, image, twitterUsername, url },
+    },
+  } = useStaticQuery<{ site: { siteMetadata: SiteMetadata } }>(query);
 
   const { theme } = useContext(AppContext);
 
