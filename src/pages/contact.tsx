@@ -106,6 +106,7 @@ const ContactPage = (props: PageProps) => {
         { title: 'Picks', pathname: 'https://picks.electriapp.com/' },
         { title: 'Notes', pathname: '/notes' },
       ]}
+      keywords={['contact', 'email']}
       title="Contact"
       {...props}
     >

@@ -59,6 +59,10 @@ const DocumentPage = ({ data, ...props }: PageProps<NodeQuery<'notesJson', Note>
         { title: 'Notes', pathname: '/notes' },
       ]}
       title={`Anthony's ${note.code} Notes${note.type !== 'note' ? ' Package' : ''}`}
+      description={`The ${note.type === 'note' ? 'notes' : 'cheat sheet'} I ${
+        note.type === 'note' ? 'took' : 'made'
+      } when studying ${note.courseTitle} (${note.code}) at Concordia University.`}
+      keywords={[note.type, 'school', 'engineering', note.code, note.courseTitle, note.semester]}
       {...props}
     >
       <main tw="container flex flex-col items-center p-4 pt-8 gap-y-16 mb-16">

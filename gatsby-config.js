@@ -5,6 +5,8 @@ module.exports = {
     author: 'Anthony Fiorito',
     description: `Anthony Fiorito's personal website. I like making things and solving problems.`,
     title: `Anthony's Website`,
+    url: `https://anthonyf.io`,
+    twitterUsername: '@ovoant',
   },
   plugins: [
     {

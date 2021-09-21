@@ -47,7 +47,8 @@ const NotesPage = ({ data, ...props }: PageProps<NodesQuery<'allNotesJson', Note
         { title: 'Notes', pathname: '/notes' },
       ]}
       title="Anthony's Notes"
-      description="A collection of notes for Concordia Engineering courses (ENGR, COEN, ELEC, COMP) I took as a Computer Engineering student."
+      description="A collection of notes for Concordia Engineering courses (ENGR, COEN, ELEC, COMP) I took during my undergraduate degree as a Computer Engineering student."
+      keywords={['notes', 'school', 'engineering', 'cheat sheet', 'review package']}
       {...props}
     >
       <main tw="container p-4 pt-8">

@@ -14,7 +14,11 @@ import { graphic, picks } from 'assets';
 const iconStyle = tw`fill-current text-gray-700 dark:text-gray-200`;
 
 const IndexPage = (props: PageProps) => (
-  <Page title="Anthony's Website" {...props}>
+  <Page
+    title="Anthony's Website"
+    keywords={['personal-website', 'about', 'blog', 'technology']}
+    {...props}
+  >
     <main tw="container flex flex-col items-center p-4 md:flex-row-reverse md:justify-between md:pt-32 md:pb-32">
       <img src={graphic} tw="max-w-sm w-full p-4 sm:max-w-md lg:p-0 lg:max-w-max" alt="Computer" />
       <div tw="flex flex-col items-center space-y-12 md:items-start">

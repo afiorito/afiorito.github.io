@@ -7,6 +7,8 @@ export interface SiteMetadata {
   author: string;
   description: string;
   title: string;
+  twitterUsername: string;
+  url: string;
 }
 
 export interface Note {

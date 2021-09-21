@@ -10,6 +10,8 @@ interface PageProps {
   description?: string;
   links?: NavLink[];
   location: GatsbyPageProps['location'];
+  image?: string;
+  keywords?: string[];
   title: string;
 }
 
