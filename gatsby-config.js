@@ -1,52 +1,50 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
-    title: `Anthony's Personal Website`,
-    description: `Anthony Fiorito's personal website for sharing ideas, projects and more`,
-    author: `@ovoant`,
+    author: 'Anthony Fiorito',
+    description: `Anthony Fiorito's personal website. I like making things and solving problems.`,
+    image: '/images/anthonyf.png',
+    title: `Anthony's Website`,
+    url: `https://anthonyf.io`,
+    twitterUsername: '@ovoant',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        trackingIds: [`UA-134438502-1`, `G-SXKDBWT5VM`],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        assets: path.join(__dirname, 'src', 'assets'),
+        components: path.join(__dirname, 'src', 'components'),
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Anthony Fiorito`,
-        short_name: `APW`,
-        start_url: `/notes`,
-        background_color: `#1B2733`,
-        theme_color: `#1B2733`,
+        name: `Anthony's Website`,
+        short_name: `Anthony's Site`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#667EFF`,
         display: `minimal-ui`,
-        icon: `src/images/electriapp-logo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/logo.svg`,
       },
     },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/content`,
-      },
-    },
-    'gatsby-plugin-offline',
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        respectDNT: true,
-        trackingId: 'UA-134438502-1',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
+        path: path.join(__dirname, 'src', 'pages', 'content'),
       },
     },
   ],

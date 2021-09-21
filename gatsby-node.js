@@ -1,25 +1,21 @@
-const generateNoteSlug = require('./src/utils/generateNoteSlug');
-
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const results = await graphql(`
     {
       allNotesJson {
-        edges {
-          node {
-            code
-            type
-          }
+        nodes {
+          code
+          type
         }
       }
     }
   `);
 
-  results.data.allNotesJson.edges.forEach(edge => {
+  results.data.allNotesJson.nodes.forEach((note) => {
     createPage({
-      path: generateNoteSlug(edge.node),
-      component: require.resolve('./src/components/DocumentDetail.jsx'),
+      path: `/notes/${note.code.replace(/\s+/g, '')}/${note.type}`,
+      component: require.resolve('./src/components/pages/document.tsx'),
       context: {
-        ...edge.node,
+        ...note,
       },
     });
   });
