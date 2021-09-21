@@ -66,7 +66,7 @@ const ContactPage = (props: PageProps) => {
           <Input
             name="name"
             onChange={onFieldChange}
-            placeholder="Something like you to be called by"
+            placeholder="Something you like to be called by"
             required
             type="text"
           />

@@ -57,7 +57,7 @@ export const Navbar = ({ brand, links, location }: NavbarProps) => {
       links.map((link) => (
         <MenuItem
           key={link.pathname}
-          isActive={link.pathname === location.pathname}
+          isActive={location.pathname.replace(/\//g, '') === link.pathname.replace(/\//g, '')}
           onClick={toggleOpen}
         >
           {link.pathname.startsWith('/') ? (
