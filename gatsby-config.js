@@ -35,7 +35,7 @@ module.exports = {
         short_name: `Anthony's Site`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#667EFF`,
+        theme_color: `#60A5FA`,
         display: `minimal-ui`,
         icon: `src/assets/logo.svg`,
       },
