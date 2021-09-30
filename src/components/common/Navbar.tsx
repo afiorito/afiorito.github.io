@@ -77,11 +77,15 @@ export const Navbar = ({ brand, links, location }: NavbarProps) => {
           {brand ? brand : <img tw="h-10 w-10" src={logo} alt="Anthony Fiorito Logo" />}
         </Link>
         <div tw="flex flex-row-reverse items-center md:flex-row">
-          <button tw="h-10 w-10 z-50 md:hidden" onClick={toggleOpen}>
+          <button aria-label="Menu" tw="h-10 w-10 z-50 md:hidden" onClick={toggleOpen}>
             {isOpen ? <CloseIcon css={iconStyle} /> : <MenuIcon css={iconStyle} />}
           </button>
           <Menu>{items}</Menu>
-          <button tw="mr-4 z-50 md:m-0 md:ml-16" onClick={() => setTheme?.((theme + 1) % 2)}>
+          <button
+            aria-label="Theme"
+            tw="mr-4 z-50 md:m-0 md:ml-16"
+            onClick={() => setTheme?.((theme + 1) % 2)}
+          >
             {theme === Theme.Light ? (
               <SunIcon css={iconStyle} tw="h-6 w-6" />
             ) : (

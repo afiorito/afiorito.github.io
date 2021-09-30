@@ -21,9 +21,9 @@ export const Footer = () => (
     </section>
     <section tw="flex flex-col text-sm justify-center items-center pt-4 pb-8">
       <div tw="flex justify-center text-sm text-gray-800 dark:text-white">
-        Found an issue? Report it&nbsp;
-        <Link css={textLinkStyle} to="/contact">
-          here
+        Found an issue? Visit the&nbsp;
+        <Link css={textLinkStyle} to="/contact/">
+          contact page
         </Link>
         .
       </div>

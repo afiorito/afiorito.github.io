@@ -12,7 +12,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
   results.data.allNotesJson.nodes.forEach((note) => {
     createPage({
-      path: `/notes/${note.code.replace(/\s+/g, '')}/${note.type}`,
+      path: `/notes/${note.code.replace(/\s+/g, '')}/${note.type}/`,
       component: require.resolve('./src/components/pages/document.tsx'),
       context: {
         ...note,

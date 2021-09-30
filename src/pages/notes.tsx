@@ -42,9 +42,9 @@ const NotesPage = ({ data, ...props }: PageProps<NodesQuery<'allNotesJson', Note
       brand={<NotesBranding />}
       links={[
         { title: 'Home', pathname: '/' },
-        { title: 'Contact', pathname: '/contact' },
+        { title: 'Contact', pathname: '/contact/' },
         { title: 'Picks', pathname: 'https://picks.electriapp.com/' },
-        { title: 'Notes', pathname: '/notes' },
+        { title: 'Notes', pathname: '/notes/' },
       ]}
       title="Anthony's Notes"
       description="A collection of notes for Concordia Engineering courses (ENGR, COEN, ELEC, COMP) I took during my undergraduate degree as a Computer Engineering student."
@@ -66,7 +66,7 @@ const NotesPage = ({ data, ...props }: PageProps<NodesQuery<'allNotesJson', Note
         <div tw="flex justify-around flex-wrap">
           {notes.length > 0 ? (
             notes.map((note) => (
-              <Link key={note.id} to={`/notes/${note.code.replace(/\s+/g, '')}/${note.type}`}>
+              <Link key={note.id} to={`/notes/${note.code.replace(/\s+/g, '')}/${note.type}/`}>
                 <Document key={note.id} note={note} />
               </Link>
             ))

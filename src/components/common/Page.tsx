@@ -20,8 +20,8 @@ export const Page = ({
   children,
   links = [
     { title: 'Home', pathname: '/' },
-    { title: 'Contact', pathname: '/contact' },
-    { title: 'Notes', pathname: '/notes' },
+    { title: 'Contact', pathname: '/contact/' },
+    { title: 'Notes', pathname: '/notes/' },
   ],
   location,
   ...seoProps

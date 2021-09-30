@@ -20,7 +20,13 @@ const IndexPage = (props: PageProps) => (
     {...props}
   >
     <main tw="container flex flex-col items-center p-4 md:flex-row-reverse md:justify-between md:pt-32 md:pb-32">
-      <img src={graphic} tw="max-w-sm w-full p-4 sm:max-w-md lg:p-0 lg:max-w-max" alt="Computer" />
+      <img
+        width="500"
+        height="348"
+        src={graphic}
+        tw="max-w-sm w-full p-4 sm:max-w-md lg:p-0 lg:max-w-max"
+        alt="Computer"
+      />
       <div tw="flex flex-col items-center space-y-12 md:items-start">
         <div tw="text-center md:text-left">
           <h1 tw="font-bold text-4xl text-gray-800 dark:text-white sm:text-6xl md:text-4xl lg:text-7xl">
@@ -41,16 +47,16 @@ const IndexPage = (props: PageProps) => (
             </OutboundLink>
           </Button>
           <div tw="flex justify-center space-x-2 md:justify-start">
-            <OutboundLink href="https://github.com/afiorito">
+            <OutboundLink aria-label="Github" href="https://github.com/afiorito">
               <GithubIcon css={iconStyle} tw="h-6" />
             </OutboundLink>
-            <OutboundLink href="https://www.linkedin.com/in/anthonyfiorito">
+            <OutboundLink aria-label="LinkedIn" href="https://www.linkedin.com/in/anthonyfiorito">
               <LinkedInIcon css={iconStyle} tw="h-6" />
             </OutboundLink>
-            <OutboundLink href="https://twitter.com/ovoant">
+            <OutboundLink aria-label="Twitter" href="https://twitter.com/ovoant">
               <TwitterIcon css={iconStyle} tw="h-6" />
             </OutboundLink>
-            <OutboundLink href="https://www.instagram.com/ovoant">
+            <OutboundLink aria-label="Instagram" href="https://www.instagram.com/ovoant">
               <InstagramIcon css={iconStyle} tw="h-6" />
             </OutboundLink>
           </div>

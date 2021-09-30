@@ -108,7 +108,7 @@ const GradeDistributionChart = ({
                 <Group top={margin.top} left={margin.left}>
                   {distribution.map((d) => {
                     const barWidth = xScale.bandwidth();
-                    const barHeight = yMax - (yScale(d.count) ?? 0);
+                    const barHeight = Math.max(0, yMax - (yScale(d.count) ?? 0));
                     const barX = xScale(d.letter) ?? 0;
                     const barY = yMax - barHeight;
                     const textX = barX + barWidth / 2 - 3;

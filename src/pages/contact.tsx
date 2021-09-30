@@ -102,9 +102,9 @@ const ContactPage = (props: PageProps) => {
     <Page
       links={[
         { title: 'Home', pathname: '/' },
-        { title: 'Contact', pathname: '/contact' },
+        { title: 'Contact', pathname: '/contact/' },
         { title: 'Picks', pathname: 'https://picks.electriapp.com/' },
-        { title: 'Notes', pathname: '/notes' },
+        { title: 'Notes', pathname: '/notes/' },
       ]}
       keywords={['contact', 'email']}
       title="Contact"

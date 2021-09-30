@@ -54,9 +54,9 @@ const DocumentPage = ({ data, ...props }: PageProps<NodeQuery<'notesJson', Note>
       brand={<NotesBranding />}
       links={[
         { title: 'Home', pathname: '/' },
-        { title: 'Contact', pathname: '/contact' },
+        { title: 'Contact', pathname: '/contact/' },
         { title: 'Picks', pathname: 'https://picks.electriapp.com/' },
-        { title: 'Notes', pathname: '/notes' },
+        { title: 'Notes', pathname: '/notes/' },
       ]}
       title={`Anthony's ${note.code} Notes${note.type !== 'note' ? ' Package' : ''}`}
       description={`The ${note.type === 'note' ? 'notes' : 'cheat sheet'} I ${
