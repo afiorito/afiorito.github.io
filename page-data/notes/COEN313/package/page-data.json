@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-components-pages-document-tsx",
-    "path": "/notes/COEN313/package",
+    "path": "/notes/COEN313/package/",
     "result": {"data":{"notesJson":{"id":"a2af97c2-bdc8-526b-a19c-5a5f83f43550","link":"https://www.dropbox.com/s/hyd0sq2umvesbc9/coen313-review.pdf?dl=0","professor":"H. Aridhi","semester":"WINTER 2017","type":"package","code":"COEN 313","courseTitle":"Digital Systems Design II","classAvg":2.82,"classSize":57,"credits":3.5,"distribution":[11,3,6,2,7,10,6,3,1,1,1,1,0,5,0,0],"grade":"A+"}},"pageContext":{"code":"COEN 313","type":"package"}},
     "staticQueryHashes": ["531803365"]}

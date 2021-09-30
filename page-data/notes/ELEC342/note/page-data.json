@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-components-pages-document-tsx",
-    "path": "/notes/ELEC342/note",
+    "path": "/notes/ELEC342/note/",
     "result": {"data":{"notesJson":{"id":"1f25bc14-19a5-5bed-9cb8-826144818ff7","link":"https://www.dropbox.com/s/or16v66z5nbmlir/elec342-notes.pdf?dl=0","professor":"W. Lynch","semester":"SUMMER 2016","type":"note","code":"ELEC 342","courseTitle":"Discrete-Time Signals and Systems","classAvg":2.65,"classSize":59,"credits":3.5,"distribution":[6,8,4,5,5,3,5,7,8,0,5,3,0,1,0,0],"grade":"A+"}},"pageContext":{"code":"ELEC 342","type":"note"}},
     "staticQueryHashes": ["531803365"]}

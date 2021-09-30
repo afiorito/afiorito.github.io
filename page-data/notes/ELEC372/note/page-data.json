@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-components-pages-document-tsx",
-    "path": "/notes/ELEC372/note",
+    "path": "/notes/ELEC372/note/",
     "result": {"data":{"notesJson":{"id":"2280bfdc-275d-5939-a3fd-e2a7647ae3d3","link":"https://www.dropbox.com/s/mfpz1gfpp3ah2ax/elec372-notes.pdf?dl=0","professor":"R. Selmic","semester":"Winter 2019","type":"note","code":"ELEC 372","courseTitle":"Fundamentals of Control Systems","classAvg":2.91,"classSize":60,"credits":3.5,"distribution":[12,4,9,3,9,2,4,5,4,0,3,3,0,2,0,0],"grade":"A+"}},"pageContext":{"code":"ELEC 372","type":"note"}},
     "staticQueryHashes": ["531803365"]}

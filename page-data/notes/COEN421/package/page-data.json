@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-components-pages-document-tsx",
-    "path": "/notes/COEN421/package",
+    "path": "/notes/COEN421/package/",
     "result": {"data":{"notesJson":{"id":"e0447dbf-f566-5b1f-bde8-e4a143795f5e","link":"https://www.dropbox.com/s/p8mvseeh93gwixi/coen421-review.pdf?dl=0","professor":"A. Trabelsi","semester":"Winter 2019","type":"package","code":"COEN 421","courseTitle":"Embedded Systems Design","classAvg":3.66,"classSize":14,"credits":4,"distribution":[4,3,2,2,1,1,1,0,0,0,0,0,0,0,0,0],"grade":"A+"}},"pageContext":{"code":"COEN 421","type":"package"}},
     "staticQueryHashes": ["531803365"]}

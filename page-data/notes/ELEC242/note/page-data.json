@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-components-pages-document-tsx",
-    "path": "/notes/ELEC242/note",
+    "path": "/notes/ELEC242/note/",
     "result": {"data":{"notesJson":{"id":"afa2b4e8-985e-5c70-9ff5-f7362bc7fe1d","link":"https://www.dropbox.com/s/nejsanpsqp9q7qf/elec242-notes.pdf?dl=0","professor":"Y. Shayan","semester":"WINTER 2016","type":"note","code":"ELEC 242","courseTitle":"Continuous-Time Signals and Systems","classAvg":2.67,"classSize":53,"credits":3,"distribution":[5,4,7,9,1,5,6,4,5,0,4,1,0,3,0,0],"grade":"A+"}},"pageContext":{"code":"ELEC 242","type":"note"}},
     "staticQueryHashes": ["531803365"]}
