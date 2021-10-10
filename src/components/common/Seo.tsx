@@ -23,7 +23,7 @@ export const Seo = ({ description, keywords, lang = 'en', title }: SeoProps) => 
 
   const { theme } = useContext(AppContext);
 
-  const metaDescription = defaultDescription ?? description;
+  const metaDescription = description ?? defaultDescription;
   return (
     <Helmet
       htmlAttributes={{ class: ['dark', 'light'][theme], lang }}
